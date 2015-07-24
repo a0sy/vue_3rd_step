@@ -8,7 +8,8 @@
 <body>
   <div id="app">
       <header-template></header-template>
-      <div v-repeat="u : user" v-component="item-template" v-with="u">
+      <!-- <div v-repeat="u : user" v-component="item-template"> -->
+      <item-template v-repeat="u : user"></item-template>
   </div>
 
   <script id="headerTemplate" type="text/template">

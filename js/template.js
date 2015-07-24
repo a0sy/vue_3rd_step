@@ -6,8 +6,13 @@ Vue.component("header-template", {
         }
     }
 })
+/*
 Vue.component("item-template", {
-    template: "{{u.user_id}}:{{u.name}}"
+    template: "<p>{{u.user_id}}:{{u.name}}</p>"
+})
+*/
+Vue.component("item-template", {
+    template: "<div>{{u.user_id}}:{{u.name}}</div>"
 })
 
 var app = new Vue({
